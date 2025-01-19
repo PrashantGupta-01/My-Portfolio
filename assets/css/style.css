@@ -131,6 +131,10 @@ li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
 
+.ul{
+  padding-left: 0rem;
+}
+
 button {
   font: inherit;
   background: none;
