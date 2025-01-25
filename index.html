@@ -1191,24 +1191,23 @@
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
-
-          <form id="contact-form" class="form" name="contact" method="POST" data-netlify="true"
-            netlify-honeypot="bot-field">
+        
+          <form id="contact-form" class="form" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required />
-
+        
               <input type="email" name="email" class="form-input" placeholder="Email address" required />
             </div>
-
+        
             <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
-
+        
             <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
           </form>
-
+        
         </section>
         <!-- Contact Icons Section -->
         <section class="contact-icons" style="margin-top: 30px; text-align: center;">
@@ -1253,30 +1252,26 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script>
-     
-    
-    
-    // document.getElementById('contact-form').addEventListener('submit', function (event) {
-    //   event.preventDefault(); // Prevent default form submission
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
 
-    //   // Simulate form submission
-    //   setTimeout(() => {
-    //     Swal.fire({
-    //       icon: 'success',
-    //       title: 'Message Sent!',
-    //       text: 'Your message has been successfully sent.',
-    //       confirmButtonText: 'Okay',
-    //     }).then(() => {
-    //       // Redirect to root after the user confirms
-    //       window.location.href = '/';
-    //     });
-    //   }, 500);
-    // });
-    
-  </script>
+    // Simulate form submission
+    setTimeout(() => {
+      Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: 'Your message has been successfully sent.',
+        confirmButtonText: 'Okay',
+      }).then(() => {
+        // Redirect to root after the user confirms
+        window.location.href = '/';
+      });
+    }, 500);
+  });
+</script>
 
-
+ 
 
 </body>
 
